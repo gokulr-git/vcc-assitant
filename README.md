@@ -1,5 +1,5 @@
 # vcc-assitant
-Sure! Here’s a complete README.md for your Smart Resume Analyzer & Job Matcher using Vertex AI & GCP project. It’s structured to help others understand, use, and even contribute to the project:
+ Smart Resume Analyzer using Vertex AI & GCP project. It’s structured to help others understand, use, and even contribute to the project:
 
 ⸻
 
