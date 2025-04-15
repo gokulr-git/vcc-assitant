@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Smart Resume Analyzer</title>
+</head>
+<body>
+    <h1>Upload Your Resume (PDF)</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="resume" accept="application/pdf" required>
+        <br><br>
+        <input type="submit" value="Analyze">
+    </form>
+</body>
+</html>
+
