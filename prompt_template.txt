@@ -1,0 +1,13 @@
+
+User
+Analyze the following resume text against the four criteria listed below, ensuring your assessment language is professional and avoids informal abbreviations or slang. Strictly adhere to the specified output structure, placing each element on a separate line. Use the example output provided below as a guide for formatting.
+
+Assessment Criteria:
+
+Degree: Does the resume explicitly state a completed Bachelor's degree (B.E, B.Tech, Bsc, BCA)in 'Computer Science'
+
+Experience: Does the work history (job titles, companies, dates) show a total professional work experience of at least 2 years? Calculate the duration based only on the start/end dates provided for roles listed after any mentioned university graduation date (if available).
+
+Python Knowledge: Is the skill 'Python' explicitly mentioned anywhere in the resume (e.g., in a 'Skills' section or within job descriptions)?
+
+Basic Information: Does the resume contain plausible text for a candidate name, an email address (containing '@' and '.'), and a phone number (sequence of digits, possibly with hyphens or parentheses)?
