@@ -9,12 +9,7 @@
 
 A serverless, cloud-native resume parsing and job matching solution built using **Google Cloud Platform (GCP)**, **Document AI**, and **Vertex AI**. This project analyzes resumes uploaded via a web interface, provides instant insights and job match recommendations, and returns a downloadable evaluation report — all without storing any data.
 
-## 🚀 Live Demo
 
-⚙️ Deployed on: **Cloud Run (GCP)**  
-🌐 Link: [Insert your Cloud Run URL here]
-
----
 
 ## 📌 Features
 
