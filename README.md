@@ -19,7 +19,7 @@ A serverless, cloud-native resume parsing and job matching solution built using 
 ## 📌 Features
 
 - 🧾 **Resume Parsing** with Google Document AI
-- 💡 **Intelligent Analysis** using Gemini 1.5 Pro / 2.0 Flash (Vertex AI)
+- 💡 **Intelligent Analysis** using Gemini 2.0 Flash (Vertex AI)
 - 📄 **Real-time Recommendations & Scoring**
 - ☁️ Fully **serverless and scalable** via Cloud Run
 - 🔒 **No storage** of user resumes or data
@@ -106,13 +106,18 @@ Replace PROJECT-ID with your GCP project ID.
 
 🧪 Sample Prompt Used (Vertex AI Gemini)
 
-You are a resume evaluation assistant. Analyze the parsed resume below and provide:
+Analyze the following resume text against the four criteria listed below, ensuring your assessment language is professional and avoids informal abbreviations or slang. Strictly adhere to the specified output structure, placing each element on a separate line. Use the example output provided below as a guide for formatting.
 
-1. Candidate Summary
-2. Strengths and Skills
-3. Predicted Suitable Job Roles
-4. Areas of Improvement
-5. Score (out of 10) with reasoning
+Assessment Criteria:
+
+Degree: Does the resume explicitly state a completed Bachelor's degree (B.E, B.Tech, Bsc, BCA)in 'Computer Science'
+
+Experience: Does the work history (job titles, companies, dates) show a total professional work experience of at least 2 years? Calculate the duration based only on the start/end dates provided for roles listed after any mentioned university graduation date (if available).
+
+Python Knowledge: Is the skill 'Python' explicitly mentioned anywhere in the resume (e.g., in a 'Skills' section or within job descriptions)?
+
+Basic Information: Does the resume contain plausible text for a candidate name, an email address (containing '@' and '.'), and a phone number (sequence of digits, possibly with hyphens or parentheses)?
+
 
 
 
@@ -120,8 +125,8 @@ You are a resume evaluation assistant. Analyze the parsed resume below and provi
 
 📈 Results
 	•	⏱️ Avg. Evaluation Time: ~4 seconds
-	•	📂 File Size Handled: Up to 5MB PDF
-	•	🧠 Intelligence Source: Gemini 1.5 Pro / Flash
+	•	📂 File Size Handled: Up to 7MB PDF
+	•	🧠 Intelligence Source: Gemini 2.0 Flash
 	•	🔒 Zero data stored: Fully ephemeral processing
 
 ⸻
@@ -140,14 +145,6 @@ You are a resume evaluation assistant. Analyze the parsed resume below and provi
 	•	Generate PDF feedback reports
 	•	Enable login/usage analytics (with user consent)
 
-⸻
-
-🤝 Contribution
-
-Pull requests and feature suggestions are welcome!
-For major changes, please open an issue first to discuss what you’d like to change.
-
-⸻
 
 📬 Contact
 
